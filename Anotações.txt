@@ -1,0 +1,30 @@
+GitHub
+
+- Copiar link e executar comando git clone + link para fazer o download do repositório.
+
+Comandos print
+
+print('='*50) : Duplicar strings ou numeros.
+print('\n'*2 : Duplicar linhas.
+Dentro do print o \t da um tab no print.
+
+Melhor forma de formatação:
+print(f'Nome: {nome} sobrenome: {sobrenome} data nascimento: {data_nascimento} email {email} senha {senha}')
+
+Funções/Métodos:
+
+Após função sempre usar os dois pontos : ex: def cadastro():
+É obrigatorio criar uma variável para retornar algo do return.
+
+
+Classe:
+- Classes são usadas para gravar por exemplo nome de pessoas, então adicionar o método dentro da classe.
+- Não necessita de parênteses ao inciar, EX: 
+class Pessoa():
+- Sempre que tiver um método dentro de uma classe, então por o self dentro do método.
+#Para dar um print de um método dentro de uma classe é necessário sempre criar uma variável da classe, EX:
+criandovariaveldaclasse = Pessoa()
+
+
+
+
