@@ -1,9 +1,42 @@
 <html>
     <head>
-        <title>Titulo navegador</title>
-        <body>
-            <h1>Página inicial</h1>
-            <a href="/contato">Contato para shows</a>
-        </body>
+        <!-- Para o flaks reconhecer alguma variável do flask é necessário por quatro chaves como abaixo:-->
+        <title>{{nome}}</title>
+        
+        <!-- Só digitar link:css que irá completar esse codigo para conectar no CSS. (O .. serve para sair da pasta que estou.) -->
+        <link rel="stylesheet" href="../static/css/estilo.css">
+        
     </head>
+    <body>
+        <h1>Página inicial</h1>
+        <a href="/contato">Avaliações dos alunos</a>
+        <!-- Para fazer uma tabela em html -->
+        <table id='tabela-nome'>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Usuario</th>
+                    <th>Senha</th>
+   <!-- Sempre colocar chaves e porcento quando for inserir python no html -->
+                </tr>
+            </thead>
+                <tbody>
+              
+                    {% for i in variavel_aluno %}
+                       <tr>
+                            <td>{{i.nome}}</td>
+                            <td>{{i.sobrenome}}</td>
+                            <td>{{i.usuario}}</td>
+                            <td>{{i.senha}}</td>
+                        </tr>
+                    {% endfor %}                   
+                    
+                </tbody>
+                
+        </table>
+        
+
+        
+    </body>
 </html>

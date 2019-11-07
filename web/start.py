@@ -10,4 +10,4 @@ def incio():
 def cervejas():
      return '<h1> Cervejas </h1>'
 
-app.run()
+app.run(debug=true)

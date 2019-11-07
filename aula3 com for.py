@@ -16,4 +16,4 @@ print('Primeira execução: ')
 for i in alunos:
     print(i)
     alunos.append('Append adiciona algo a lista') #Append serve para adicionar algo na lista.
-    print(alunos.count('Bruno')) #count serve para adicionar contar quantos intens tem em cada lista.
+    #print(alunos.count('Bruno')) #count serve para adicionar contar quantos intens tem em cada lista.
