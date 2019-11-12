@@ -1,9 +1,8 @@
 #Comando para abrir um arquivo o 'r' serve para apenas ler.
 arquivo = open('alunos.txt','r')
 
-Com o for, cada linha do arquivo será jogado para a variavel dado.
+#Com o for, cada linha do arquivo será jogado para a variavel dado.
 for dado in arquivo:
-    print(dado)
 arquivo.close()
 
 #O parametro 'w' serve para escrever algo no arquivo(apagando), e o 'a' apenas adiciona, não exclui.

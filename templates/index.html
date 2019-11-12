@@ -10,5 +10,23 @@
 <body>
 
     <a href="/cadastrar">Cadastrar Pizza</a>
+    <table>
+        <thead>
+           <tr>
+               <th>Sabores</th>
+               <th>Tamanho</th>
+               <th>Endereço</th>
+           </tr>
+            <tbody>
+                {% for c in lista %}
+                <tr>
+                    <td>{{c [0] }}</td>
+                    <td>{{c [1] }}</td>
+                    <td>{{c [2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </thead>
+    </table>
 </body>
 </html>
