@@ -10,7 +10,7 @@ def inicio():
     #'r' é para ler o arquivo(modo de leitura).
    with open('pizzas.txt', 'r') as arquivopizzas:
         for l in arquivopizzas:
-            quebralinha = l.split(';')#Split serve para quebrar a linha, por exemplo ponto e vírgula.
+            quebralinha = l.split(';')#Split serve para separar algo, por exemplo ponto e vírgula.
             lista_pizzas.append(quebralinha)
             # sabores = quebralinha [0]
             # tamanhos = quebralinha [1]
