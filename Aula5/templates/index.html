@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <div style="text-align:center">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/cadastrar">Cadastrar Carro</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Categoria</th>
+                <th>Ano</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in lista %}
+                <tr>
+                    <td>{{ c.marca }}</td>
+                    <td>{{ c.modelo }}</td>
+                    <td>{{ c.categoria }}</td>
+                    <td>{{ c.ano }}</td>
+                </tr>
+            {% endfor %}
+        </div>
+        </tbody>
+    
+    </table>
+
+</body>
+</html>
+
+</html>
